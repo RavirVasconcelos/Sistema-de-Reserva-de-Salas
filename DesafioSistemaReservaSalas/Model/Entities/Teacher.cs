@@ -16,5 +16,10 @@
             Name = name;
             TeacherId = teacherId;
         }
+
+        public override string ToString()
+        {
+            return $"Teacher: {Name}, ID: {TeacherId}, Reserved Rooms: {string.Join(", ", ReserverdRooms.Select(r => r.Name))}";
+        }
     }
 }

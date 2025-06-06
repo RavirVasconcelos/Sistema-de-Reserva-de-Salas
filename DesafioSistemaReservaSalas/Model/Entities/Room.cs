@@ -16,5 +16,10 @@
             Capacity = capacity;
             IsAvailable = isAvailable;
         }
+
+        public override string ToString()
+        {
+            return $"Room: {Name}, Capacity: {Capacity}, Available: {IsAvailable}";
+        }
     }
 }
